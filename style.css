@@ -261,6 +261,7 @@ button:active {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
     font-size: 1.25rem;
     padding: 1rem;
   }
