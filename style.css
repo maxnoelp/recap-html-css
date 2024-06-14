@@ -1,0 +1,272 @@
+*,
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+main {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.card-left,
+.card-center,
+.card-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+
+.padding {
+  padding: 1.5rem;
+}
+
+/* header*/
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.head-cover {
+  position: relative;
+  border-radius: 1.5rem;
+}
+
+.shadow {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  width: 100%;
+  height: 50%;
+  background: black;
+  background: -moz-linear-gradient(
+    top,
+    rgb(206, 205, 205, 0%) 0%,
+    rgb(255, 255, 255) 85%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgb(206, 205, 205, 0%) 0%,
+    rgb(255, 255, 255) 85%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgb(206, 205, 205, 0%) 00%,
+    rgb(255, 255, 255) 85%
+  );
+}
+
+.icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  margin: 0;
+  padding: 0.4rem 0.65rem 0.4rem 0.65rem;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255, 30%);
+  font-weight: 800;
+}
+
+.photo-by {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 0.75rem;
+  color: #7e7e7e;
+}
+
+/* header-ende */
+
+/* Text */
+
+.product-text {
+  color: #7e7e7e;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+/* Text-end */
+
+/* Buttons/Card-Info */
+
+.card-info {
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+}
+
+.price {
+  text-align: center;
+  background-color: white;
+  padding: 0.75rem 0 0.75rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  border-radius: 10px;
+}
+
+.change-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.size-change,
+.quantity-change {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  padding-bottom: 0;
+  color: #7e7e7e;
+  font-weight: 600;
+}
+
+select {
+  width: 3.75rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Color-Change */
+
+.color-change {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.blue,
+.red,
+.black,
+.green-black,
+.blue-black,
+.pink-black,
+.red-white,
+.black-white {
+  height: 35px;
+  width: 35px;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-right: 0;
+  border-radius: 20px;
+  padding-top: 0;
+}
+
+.color {
+  margin: 0;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+}
+
+.green-black {
+  background-image: linear-gradient(
+    90deg,
+    rgb(53, 83, 10) 50%,
+    rgb(0, 0, 0) 50%
+  );
+}
+
+.pink-black {
+  background-image: linear-gradient(
+    90deg,
+    rgb(231, 84, 128) 50%,
+    rgb(0, 0, 0) 50%
+  );
+}
+
+.blue-black {
+  background-image: linear-gradient(
+    90deg,
+    rgb(0, 32, 91) 50%,
+    rgb(0, 0, 0) 50%
+  );
+}
+
+.red-white {
+  background-image: linear-gradient(
+    90deg,
+    rgb(116, 0, 0) 50%,
+    rgb(255, 255, 255) 50%
+  );
+}
+
+.black-white {
+  background-image: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 50%,
+    rgb(255, 255, 255) 50%
+  );
+}
+
+/* add to cart */
+
+button {
+  width: 100%;
+  height: 2.75rem;
+  border: none;
+  background-color: #485fb9;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  color: white;
+}
+
+button:hover {
+  background-color: #5874e2;
+}
+
+button:active {
+  background-color: #26325f;
+  transition: 400ms;
+}
+
+/* min-width for desktop */
+@media screen and (min-width: 1350px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+
+  .product-text {
+    font-size: 0.9rem;
+  }
+}
