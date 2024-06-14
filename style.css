@@ -143,6 +143,10 @@ img {
   font-weight: 600;
 }
 
+.quantity-change {
+  padding-left: 0;
+}
+
 select {
   width: 3.75rem;
   height: 1.5rem;
